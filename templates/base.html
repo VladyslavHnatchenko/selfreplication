@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<title>SelfReplication</title>
+</head>
+<body>
+	<div class="card">
+        <h1 class="card-header">SelfReplication</h1>
+        <div class="card-body">
+            <h4 class="card-title">You've forked a "SelfReplication" repository.</h4>
+            <p class="card-text">
+                Please visit your GitHub account.
+                You can find the repository with installation instructions and technical specifications.
+                Read the documentation and try installing this application on your computer.<br>
+                <b>Please press the "GitHub" button below for redirection
+                    to your repo with the application code.</b>
+            </p>
+            <a href="{{ link_to_repo }}" class="btn btn-success">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
