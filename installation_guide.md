@@ -3,7 +3,7 @@ ________________________________________________________________________________
 
 **Step 1:**
 Visit the following link to register a new OAuth application:
-https://github.com/settings/applications/new
+[link to GitHub OAuth](https://github.com/settings/applications/new)
 * Application name - you can fill this field with any app name you want.
 * Homepage URL - when you use application locally you fill this field with the
     following link - http://127.0.0.1:5000. In production, you use another link:
