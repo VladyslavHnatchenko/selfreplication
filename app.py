@@ -5,7 +5,7 @@ from flask_api import status
 from flask import Flask, redirect, url_for, render_template
 
 
-"""..."""
+"""Settings for GitHub and Heroku."""
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", ".env")
 app.config["GITHUB_OAUTH_CLIENT_ID"] = os.environ.get(
@@ -20,13 +20,13 @@ repo_name = os.environ.get("REPOSITORY_NAME", ".env")
 
 
 def get_link(username, repo):
-    """..."""
+    """Get link from github username and repo."""
     return f"https://github.com/{username}/{repo}"
 
 
 @app.route('/')
 def replication():
-    """..."""
+    """The function that forks the GitHub repository."""
     if not github.authorized:
         return redirect(url_for("github.login"))
 
