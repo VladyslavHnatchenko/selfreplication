@@ -1,4 +1,4 @@
-SelfReplication
+**SelfReplication APP**
 ____________________________________________________________________________________________________
 
 * This is a self-replicating application that creates storage in the GitHub user account
